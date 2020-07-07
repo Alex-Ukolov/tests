@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<script type="text/javascript">
+	function rev()
+	{
+		n = document.getElementById('main').value;
+		m = 3.14*n*n;
+		document.getElementById('res').value = m;
+	}
+	 function der()
+	 {
+	 aa = document.getElementById('1').value;
+	 bb = document.getElementById('2').value;
+	 cc = document.getElementById('3').value;
+	 var dd=parseInt(aa)+parseInt(bb)+parseInt(cc);
+	 dd=dd/2;
+	 var S=Math.sqrt(dd*(dd-aa)*(dd-bb)*(dd-cc));
+	 document.getElementById('eee').value = S;
+	 }
+</script>
+</HEAD> 
+<BODY>
+
+<div> введите радиус круга<div>
+	<input type = "text" id="main">
+	<div> ответ<div>
+	<input type = "text" id="res">
+	<button text="узнать площадь окружности" type = "button" onClick="rev()">узнать площадь окружности</button>
+
+	<div>введите 1-сторону треугольника<div>
+	<input type="text" id="1">
+	<div>введите 2-сторону треугольника<div>
+	<input type="text" id="2">
+	<div>введите 3-сторону треугольника<div>
+	<input type="text" id="3">
+	<div> ответ<div>
+	<input type="text" id="eee">
+	<button text="узнать площадь треугольника" type = "button" onClick="der()">узнать площадь треугольника</button>
+</BODY>
+</HTML>
